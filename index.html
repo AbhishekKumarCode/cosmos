@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="/img/idk.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <div class="name">COSMOS</div>
+
+      <div class="logo">
+        <a href="index.html">
+          <img src="/img/idk.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div class="nav">
+        <!-- SIDEBAR -->
+        <ul class="sidebar">
+          <li onclick="hidesidebar()" class="cross">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#fff"
+                  d="m6.4 18.308l-.708-.708l5.6-5.6l-5.6-5.6l.708-.708l5.6 5.6l5.6-5.6l.708.708l-5.6 5.6l5.6 5.6l-.708.708l-5.6-5.6l-5.6 5.6Z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Portfolios</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <!-- TOP NAV -->
+        <ul>
+          <li><a href="#section">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li onclick="showsidebar()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="29"
+                height="29"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M4.5 17.27q-.213 0-.356-.145Q4 16.981 4 16.77q0-.213.144-.356q.143-.144.356-.144h15q.213 0 .356.144t.144.357q0 .213-.144.356t-.356.143h-15Zm0-4.77q-.213 0-.356-.144Q4 12.212 4 12t.144-.356q.144-.143.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356q-.143.143-.356.143h-15Zm0-4.77q-.213 0-.356-.143T4 7.23q0-.213.144-.356q.143-.143.356-.143h15q.213 0 .356.144q.144.144.144.356q0 .213-.144.357q-.144.143-.356.143h-15Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- INTRO BACKGROUND -->
+    <div class="intro-bg moon">
+      <img src="/img/moon-bg.png" alt="" />
+    </div>
+
+    <!-- HOME CONTENT -->
+    <div class="home-content">
+      <div class="hero-cont-txt">
+        <h1 class="welcome">Welcome, Explorer</h1>
+        <h1>Where Curiosity Meets the Cosmos</h1>
+        <p>Your journey begins here.</p>
+      </div>
+      <div class="btn">
+        <button><a href="#">Start Exploring</a></button>
+      </div>
+
+      <div class="rocket">
+        <img src="/img/rocket.png" alt="rocket" />
+      </div>
+
+      <!-- SLIDING TEXT -->
+      <div class="mq-slide">
+        <div class="mq" id="slideTrack">
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span><span><span class="dot"></span></span>
+          <span>Mission: Ready.! </span>
+        </div>
+      </div>
+    </div>
+<!-- About star -->
+    <section class="about-star">
+      <div class="about-container">
+        <span class="about-label">ABOUT STAR</span>
+
+        <h2 class="about-title">A Space Built for Curious Minds</h2>
+
+        <p class="about-text">
+          STAR is a digital universe created for explorers, thinkers, and
+          dreamers. From distant planets to infinite galaxies, we transform
+          curiosity into a journey beyond Earth.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION -->
+    <div class="section">
+      <h1 class="featured-des">Featured Destinations</h1>
+      <div class="parent">
+        <a href="index.html" class="div1 img-card">
+          <img src="/img/earth-horzi.jpg" alt="" />
+          <div class="overlay">Earth <br />Our Home Planet</div>
+        </a>
+
+        <a href="index.html" class="div2 img-card">
+          <img src="/img/mars.jpg" alt="" />
+          <div class="overlay">Mars <br />The Red Frontier</div>
+        </a>
+
+        <a href="index.html" class="div3 img-card">
+          <img src="/img/Rocket.jpg" alt="" />
+          <div class="overlay">Launch <br />Beyond Atmosphere</div>
+        </a>
+        <a href="index.html" class="div4 img-card">
+          <img src="/img/Galaxy1.jpg" alt="" />
+          <div class="overlay">
+            BEYOND THE KNOWN <br />Where curiosity has no limits
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Solar SYstem -->
+<section class="solar-slider">
+  <h2 class="solar-title">Solar System</h2>
+
+  <div class="slider" id="slider">
+    <div class="track" id="track">
+
+      <div class="planet-card mercury"><span>MERCURY</span></div>
+      <div class="planet-card venus"><span> VENUS</span></div>
+      <div class="planet-card earth"><span> EARTH</span></div>
+      <div class="planet-card moon2"><span>  MOON</span></div>
+      <div class="planet-card mars"><span> MARS </span></div>
+      <div class="planet-card jupiter"><span> JUPITER</span></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why space Matter -->
+ <section class="why-space">
+  <div class="space-container">
+    <span class="space-label">WHY SPACE MATTERS</span>
+
+    <h2 class="space-title">Perspective Beyond Distance</h2>
+
+    <p class="space-text">
+      Space is not just distance — it is perspective.
+      It reminds us how small we are, and how far curiosity
+      can take us beyond limits.
+    </p>
+  </div>
+</section>
+
+
+  <!-- CTA -->
+   <section class="cta">
+  <div class="cta-bg"></div>
+
+  <div class="cta-content">
+    <span class="cta-label">FINAL TRANSMISSION</span>
+
+    <h2 class="cta-title">
+      The Universe Awaits.
+    </h2>
+
+    <p class="cta-text">
+      Curiosity doesn’t end here.  
+      It begins when you decide to explore.
+    </p>
+
+    <button class="cta-btn">
+      Launch Mission
+    </button>
+  </div>
+</section>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="fPad">
+        <div class="container">
+          <div class="menu">
+            <div class="fLogo">
+              <img src="/img/idk.svg" alt="logo" />
+            </div>
+
+            <div class="menu-1">
+              <ul>
+                The Good
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="menu-2">
+              <ul>
+                The Boring
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Play with Rules</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+
+            <div class="menu-3">
+              <ul>
+                The Cool
+                <li>
+                  <a href="https://www.instagram.com/igabhi._/">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="fLogo-end">
+            <h1>COSMOS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="sidebar-overlay" onclick="hidesidebar()"></div>
+
+  </body>
+</html>

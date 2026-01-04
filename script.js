@@ -173,3 +173,23 @@ overlay.addEventListener("touchstart", hidesidebar);
 
 /* ALSO SUPPORT CLICK (desktop testing) */
 overlay.addEventListener("click", hidesidebar);
+
+// Debug font loading
+fetch('/font/neue-pixel-sans.regular.ttf')
+  .then(response => {
+    console.log('Font file fetch status:', response.status);
+    if (!response.ok) {
+      console.error('Font file not accessible');
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching font file:', error);
+  });
+
+document.fonts.ready.then(() => {
+  const fontLoaded = document.fonts.check('16px "Neue Pixel Sans"');
+  console.log('Neue Pixel Sans font loaded:', fontLoaded);
+  if (!fontLoaded) {
+    console.warn('Custom font "Neue Pixel Sans" failed to load');
+  }
+});

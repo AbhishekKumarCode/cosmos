@@ -6,7 +6,7 @@ This project focuses on clean UI, smooth scroll effects, and responsive layout.
 ---
 
 ## 🚀 Live Demo
-🔗 https://cosmos-chi-two.vercel.app/
+🔗 https://cosmos-eight-pink.vercel.app/
 
 ---
 
